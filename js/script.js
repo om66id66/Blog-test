@@ -15,7 +15,7 @@ var dc = {};
 
 var homeHtmlUrl = "snippets/home-snippet.html";
 var allCategoriesUrl =
-  "https://coursera-jhu-default-rtdb.firebaseio.com/categories.json";
+  "https://coursera-jhu-default-rtdb.firebaseio.com/categories.json , https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/%7Bcategory_short_name%7D.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl =
