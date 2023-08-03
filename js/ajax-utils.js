@@ -30,7 +30,7 @@ ajaxUtils.sendGetRequest =
                        responseHandler,
                        isJsonResponse); 
       };
-    request.open("GET", requestUrl, true);
+    request.open("GET", 'data.txt', requestUrl, true);
     request.send(null); // for POST only
   };
 
