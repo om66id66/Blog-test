@@ -10,35 +10,49 @@
 
 <body>
     <header>
-        <div class="head">
-            <h1> <b>Blogger</b></h1>
+        <div class="row">
+            <div class="col-12">
+                <h1> <b>Blogger</b></h1>
+    
+            </div><br>
+            <div class="nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="logIn.html">Sign In</a>
+            </div>
+
         </div>
+
     </header>
 
-    <div class="nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="#">About</a>
-        <a href="logIn.html">Sign In</a>
+
+    <div class="main">
+
+        <main>
+            <img src="/img/images (1).png" alt="">
+                <form method="post">
+                    <label for="userId">Username</label>
+                    <input type="text" id="userId" name="username" required minlength="3" maxlength="20"><br><br>
+                    <label for="pass">Password</label>
+                    <input type="password" name="userpass" id="pass" required minlength="4"><br><br>
+                    <button type="submit">Sign In</button><br>
+                </form>
+            
+        </main>
     </div>
+
     
 
-    <main>
-        <div class="main">
-            <form method="post">
-                <label for="userId">Username</label>
-                <input type="text" id="userId" name="username" required minlength="3" maxlength="20"><br>
-                <label for="pass">Password</label>
-                <input type="password" name="userpass" id="pass" required minlength="4"><br>
-                <button type="submit">Sign In</button><br>
-            </form>
-        </div>
 
-    </main>
 
 
     <footer>
-        <div class="footer">
-            <p></p>
+        <div class="Container">
+            <div class="col">
+                <div class="">hi</div>
+                <div>yo</div>
+                <div>go</div>
+            </div>
         </div>  
     </footer>
 
