@@ -61,6 +61,10 @@ header .nav {
     border-right: 1px solid #d1d1d6;
 }
 
+p::first-line {
+    font-weight: bold;
+}
+
 
 @media(min-width:790px) {
     div.parent {
