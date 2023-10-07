@@ -1,0 +1,26 @@
+*{
+    list-style: none;
+}
+body{
+    text-align: center;
+    color: #333333;
+    background-color: #EE9972;
+    font-family: Cambria;
+}
+img{
+    width: 100px;
+}
+.header {
+    top: 0;
+    display: flex;
+    
+    width: 100vh;
+    background-color: darkmagenta;
+}
+
+div ~ ul {
+    background-color: #EDEFEE;
+    color: #495E57;
+    box-shadow: inset 1px 1px 3px #333333;
+    padding: 10px;
+}

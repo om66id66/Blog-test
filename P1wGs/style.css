@@ -5,8 +5,10 @@
 }
 
 body {
+    text-align: center;
     display: grid;
     height: 150vh;
+    background-color: #e6e1db;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "header" "header"
                          "sidebar" "main"
@@ -18,7 +20,7 @@ body {
 
 header {
     position: fixed top;
-    background: linear-gradient(45deg, rgb(236, 244, 126) 2%, rgb(10, 117, 12) 80%);
+    background: linear-gradient(45deg, #d6b273 2%, #d3852c 80%);
     text-align: center;
 }
 h1 {
@@ -55,15 +57,22 @@ header .nav {
     display: grid;
     grid-area: "sidebar";
     text-align: center;
-    background-color: #f8eded;
+    background-color: rgb(222, 214, 191);
     border-right: 1px solid #d1d1d6;
 }
-@media(max-width:440px) {
-    div.container{
-        text-align: center;
-        display: flex;
-        grid-template-columns: 100%;
-        grid-template-rows: 15vh 1fr 15vh;
+
+
+@media(min-width:790px) {
+    div.parent {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width:790px) {
+    div.container {
+        display: grid;
+        grid-template-columns: auto;
         grid-template-areas: "header"
                               "main"
                               "footer";
@@ -95,11 +104,23 @@ header .nav {
     display: flex-start;
 }
 .listItem a {
-    text-decoration: none;
+    text-decoration:solid;
 }
-.listItem a:hover {
+
+li ~ a:link {
+    color: rgb(38, 38, 247);
+}
+li ~ a:visited {
+    color: rgb(87, 202, 112);
+}
+li > a:hover {
     text-decoration: underline;
 }
+li ~ a:active {
+    color: rgb(226, 56, 56);
+
+}
+
 
 main {
     display: grid;
@@ -118,44 +139,53 @@ main {
 }
 
 .segment {
-    /* display: grid; */
-    /* grid-template-columns: auto; */
+    box-shadow: 2px 1px 2px 1px inset #333333;
+    background-color: aliceblue;
     place-items: center;
     text-align: center;
     margin: 2em;
     line-height: 2rem;
-    /* grid-template-columns: 60vh; */
+    height: 50vh;
+    width: auto;
+    overflow: scroll;
+    scroll-margin: 0;
+}
+.segment ~ p {
+    display: flexbox;
 }
 .first {
-    background-color: aquamarine;
+   box-shadow: 2px 1px 2px 1px inset #333333;
 }
 
 .second {
-    background-color: burlywood;
+    /* background-color: burlywood; */
 }
 
 .third {
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
 }
 .forth {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 .fifth {
-    background-color: darkorchid;
+    /* background-color: darkorchid; */
 }
 .sixth {
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 .seventh {
-    background-color: olivedrab;
+    /* background-color: olivedrab; */
 }
 
 footer {
     display: grid;
     grid-area: "footer";
     position: fixed bottom;
-    background: linear-gradient(45deg, rgb(236, 244, 126) 2%, rgb(10, 117, 12) 80%);
+    background: linear-gradient(45deg, #d3852c 2%, #d6b273 80%);
     text-align: center;
     padding: 20px;
     color: white;
+}
+footer img {
+    width: 100px;
 }
