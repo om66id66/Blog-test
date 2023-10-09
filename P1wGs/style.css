@@ -25,6 +25,11 @@ header {
 }
 h1 {
 padding: 1em;
+text-shadow:
+ 0 0 8px purple,
+ 0 0 16px gold,
+ 0 0 32px rgb(172, 182, 38),
+ 0 0 64px gold;
 }
 
 header .nav {
@@ -49,7 +54,7 @@ header .nav {
 
 .container {
     display: grid;
-    grid-template-columns: 20vh  auto;
+    grid-template-columns: 30vh  auto;
 }
 
 
@@ -127,6 +132,7 @@ li ~ a:active {
 
 
 main {
+    width: 100%;
     display: grid;
     grid-area: "main";
 }
